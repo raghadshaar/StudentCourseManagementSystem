@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace StudentCourseManagementSystem
+namespace StudentCourseManagementSystem.Models
 {
     public class Department
     {
@@ -16,7 +16,5 @@ namespace StudentCourseManagementSystem
        = new List<Instructor>();
         public ICollection<Student> Students { get; set; }
        = new List<Student>();
-
-
     }
 }

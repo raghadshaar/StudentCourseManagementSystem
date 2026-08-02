@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace StudentCourseManagementSystem
+namespace StudentCourseManagementSystem.Models
 {
     public class Student
     {
