@@ -11,11 +11,13 @@ namespace StudentCourseManagementSystem
     {
         public int Id { get; set; }
         [MaxLength(100)]
-        public string Name { get; set; }
+        public string Name { get; set; } = null!;
         [EmailAddress]
-        [MaxLength(300)]
-        public string Email { get; set; }
-
-
+        [MaxLength(254)]
+        public string Email { get; set; } = null!;
+        public int DepartmentId { get; set; }
+        public Department Department { get; set; } = null!;
+        public ICollection<Course> Courses { get; set; }
+            = new List<Course>();
     }
 }

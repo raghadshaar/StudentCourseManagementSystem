@@ -11,7 +11,12 @@ namespace StudentCourseManagementSystem
     {
         public int Id { get; set; }
         [MaxLength(100)]
-        public string Name { get; set; }
+        public string Name { get; set; } = null!;
+        public ICollection<Instructor> Instructors { get; set; }
+       = new List<Instructor>();
+        public ICollection<Student> Students { get; set; }
+       = new List<Student>();
+
 
     }
 }
