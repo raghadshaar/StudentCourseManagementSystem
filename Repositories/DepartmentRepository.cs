@@ -8,11 +8,7 @@ namespace StudentCourseManagementSystem.Repositories
     public class DepartmentRepository
         : Repository<Department>, IDepartmentRepository
     {
-        public DepartmentRepository(
-            StudentCourseManagementContext context)
-            : base(context)
-        {
-        }
+        public DepartmentRepository(StudentCourseManagementContext context): base(context){}
 
         public async Task<IReadOnlyList<DepartmentStudentCountDto>>
             GetStudentCountsAsync()

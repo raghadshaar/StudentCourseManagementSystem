@@ -1,18 +1,14 @@
 ﻿using global::StudentCourseManagementSystem.Interfaces;
 using global::StudentCourseManagementSystem.Models;
 using Microsoft.EntityFrameworkCore;
-using StudentCourseManagementSystem.Interfaces;
 
 namespace StudentCourseManagementSystem.Repositories
 {
     public class StudentRepository
         : Repository<Student>, IStudentRepository
     {
-        public StudentRepository(
-            StudentCourseManagementContext context)
-            : base(context)
-        {
-        }
+        public StudentRepository(StudentCourseManagementContext context): base(context)
+        {}
 
         public async Task<IReadOnlyList<Student>>
             GetStudentsWithDepartmentAsync()

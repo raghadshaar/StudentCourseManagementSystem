@@ -10,9 +10,7 @@ namespace StudentCourseManagementSystem.Interfaces
 {
     public interface IDepartmentRepository : IRepository<Department>
     {
-        Task<IReadOnlyList<DepartmentStudentCountDto>>
-            GetStudentCountsAsync();
-
+        Task<IReadOnlyList<DepartmentStudentCountDto>>GetStudentCountsAsync();
         Task<Department?> GetDepartmentWithMostStudentsAsync();
     }
 }

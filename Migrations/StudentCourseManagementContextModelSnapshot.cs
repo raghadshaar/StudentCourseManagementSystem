@@ -45,7 +45,7 @@ namespace StudentCourseManagementSystem.Migrations
 
                     b.HasIndex("InstructorId");
 
-                    b.ToTable("Courses");
+                    b.ToTable("Courses", (string)null);
                 });
 
             modelBuilder.Entity("StudentCourseManagementSystem.Models.Department", b =>
@@ -63,7 +63,7 @@ namespace StudentCourseManagementSystem.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Departments");
+                    b.ToTable("Departments", (string)null);
                 });
 
             modelBuilder.Entity("StudentCourseManagementSystem.Models.Enrollment", b =>
@@ -91,7 +91,7 @@ namespace StudentCourseManagementSystem.Migrations
                     b.HasIndex("StudentId", "CourseId")
                         .IsUnique();
 
-                    b.ToTable("Enrollments");
+                    b.ToTable("Enrollments", (string)null);
                 });
 
             modelBuilder.Entity("StudentCourseManagementSystem.Models.Instructor", b =>
@@ -119,7 +119,7 @@ namespace StudentCourseManagementSystem.Migrations
 
                     b.HasIndex("DepartmentId");
 
-                    b.ToTable("Instructors");
+                    b.ToTable("Instructors", (string)null);
                 });
 
             modelBuilder.Entity("StudentCourseManagementSystem.Models.Student", b =>
@@ -147,7 +147,7 @@ namespace StudentCourseManagementSystem.Migrations
 
                     b.HasIndex("DepartmentId");
 
-                    b.ToTable("Students");
+                    b.ToTable("Students", (string)null);
                 });
 
             modelBuilder.Entity("StudentCourseManagementSystem.Models.Course", b =>
